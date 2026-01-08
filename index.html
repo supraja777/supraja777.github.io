@@ -12,21 +12,46 @@
   
   <title>Supraja Srikanth | Software Engineer</title>
 
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Supraja Srikanth | Software Engineer" />
-  <meta property="og:description" content="Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing." />
-  <meta property="og:url" content="https://github.com/supraja777" />
-  <meta property="og:site_name" content="Supraja Srikanth" />
-  <meta property="og:image" content="https://via.placeholder.com/400x400" />
+  <style>
+    /* Aesthetic Refinements */
+    .teal { background-color: #00897b !important; }
+    .teal-text { color: #00897b !important; }
+    
+    /* Better spacing for cards */
+    .card {
+      border-radius: 8px !important;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08) !important;
+      transition: transform 0.3s ease;
+    }
+    .card:hover { transform: translateY(-5px); }
+
+    /* Skill Chip Design */
+    .skill-chip {
+      display: inline-block;
+      padding: 5px 15px;
+      margin: 5px;
+      background: #e0f2f1;
+      border-radius: 20px;
+      color: #00695c;
+      font-size: 0.9rem;
+      font-weight: 500;
+    }
+
+    /* Intro Section Polish */
+    #intro {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1400&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
 </head>
 
 <body>
   <nav class="hide-on-small-only">
     <ul class="side-nav fixed section table-of-contents">
       <li class="logo">
-        <a id="logo-container" aria-label="Navigate to the beginning of the page" href="#intro" class="brand-logo grey-blue-text">
-          <img src="https://via.placeholder.com/200x200" class="circle img-responsive profile-pic" alt="avatar">
+        <a id="logo-container" href="#intro" class="brand-logo">
+          <img src="https://via.placeholder.com/200x200" class="circle img-responsive profile-pic" alt="avatar" style="border: 3px solid #00897b;">
         </a>
       </li>
       <li class="bold"><a href="#about" class="waves-effect waves-dark teal-text"><i class="mdi-social-person small"></i><span>About</span></a></li>
@@ -41,105 +66,75 @@
 
   <main>
     <section id="intro" class="section scrollspy full-height">
-      <div class="overlay"></div>
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Supraja Srikanth.</span></h2>
-              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
-              <h5>Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing.</h5>
-            </div>
-            <div class="social">
-              <a href="https://github.com/supraja777" target="_blank"><button class="icon-btn github"><i class="fa fa-github"></i></button></a>
-              <a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank"><button class="icon-btn linkedin"><i class="fa fa-linkedin"></i></button></a>
-            </div>
-            <div class='buttons'>
-              <a href="#about" class="readme">Read More</a>
-              <a href="#contact" class="contactme">Contact Me</a>
-            </div>
+        <div class="content section-padding valign" style="margin-left: 5%;">
+          <div class="caption">
+            <h2 class="white-text">Hello! I'm <span class="teal-text text-lighten-2" style="font-weight: 700;">Supraja Srikanth</span></h2>
+            <h4 class="white-text" style="font-weight: 300;">A <span class="typing" style="font-weight: 500; color: #4db6ac;"></span></h4>
+            <p class="white-text flow-text" style="max-width: 600px; opacity: 0.9;">
+              Highly motivated and detail-oriented software engineer specializing in <b>Java, Spring Boot, and Cloud Computing.</b>
+            </p>
+          </div>
+          <div class="social" style="margin-top: 30px;">
+            <a href="https://github.com/supraja777" target="_blank"><button class="btn-floating btn-large teal waves-effect"><i class="fa fa-github"></i></button></a>
+            <a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank" style="margin-left: 15px;"><button class="btn-floating btn-large teal waves-effect"><i class="fa fa-linkedin"></i></button></a>
           </div>
         </div>
       </div>
     </section>
 
     <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
+      <h3 class="page-title white-text teal">Professional Summary</h3>
       <div class="container flow-text">
-        <p>I'm a highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing. I'm passionate about building scalable and efficient systems, and I'm always looking to learn and improve my skills.</p>
-        <ul>
-          <li>Highly motivated and detail-oriented</li>
-          <li>Experience with Java, Spring Boot, and cloud computing</li>
-          <li>Passionate about building scalable and efficient systems</li>
-        </ul>
-        <p>Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.</p>
+        <div class="card-panel z-depth-1" style="border-left: 5px solid #00897b;">
+          <p>I'm a software engineer with a passion for building <b>scalable and efficient systems.</b> I specialize in backend architecture and cloud-native solutions, always aiming to bridge the gap between complex logic and seamless user experience.</p>
+        </div>
       </div>
     </section>
 
     <section id="experience" class="section scrollspy">
       <h3 class="page-title white-text teal">Experience</h3>
       <div class="container">
+        
         <div class="card">
           <div class="card-content">
-            <span class="card-title">Application Developer — ThoughtWorks</span>
-            <em>Jan 2024 - Jul 2025</em>
-            <p>Engineered bill notifications and alerts within the distributed autopay platform using Spring Boot and Java. Architected a robust recurring mandate protocol for autopay. Decreased payment processing latency by 75ms by optimizing BBPS APIs.</p>
+            <div class="row">
+              <div class="col s12 m10">
+                <span class="card-title teal-text" style="font-weight: 600;">Application Developer — ThoughtWorks</span>
+                <p class="brown-text">Jan 2024 - Jul 2025</p>
+                <p style="margin-top: 10px;">Architected a robust recurring mandate protocol for autopay. Decreased payment processing latency by 75ms through API optimization.</p>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Software Engineer — KAS Commerce</span>
-            <em>Oct 2023 - Jan 2024</em>
-            <p>Optimized API response time for Stripe transactions by 150ms. Implemented Amazon OAuth for user registration and authentication. Built interactive business intelligence dashboards using React and PostgreSQL for data visualization.</p>
-          </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Software Engineering Intern — Amazon</span>
-            <em>Jan 2023 - Jun 2023</em>
-            <p>Designed a shadow testing environment with Java, Spring Boot, and AWS. Debugged rate card logic leveraging JUnit, Mockito, and EasyMock for comprehensive integration testing.</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-content">
-                <span class="card-title teal-text">Autopay Platform</span>
-                <p>A distributed autopay platform built using Spring Boot and Java.</p>
-                <p><strong>Tech:</strong> Java, Spring Boot</p>
-              </div>
-              <div class="card-action"><a href="#" target="_blank">View</a></div>
-            </div>
-          </div>
-          <div class="col s12 m6 l4">
-            <div class="card medium">
-              <div class="card-content">
-                <span class="card-title teal-text">Business Intelligence Dashboard</span>
-                <p>An interactive business intelligence dashboard built using React and PostgreSQL.</p>
-                <p><strong>Tech:</strong> React, PostgreSQL</p>
-              </div>
-              <div class="card-action"><a href="#" target="_blank">View</a></div>
-            </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title teal-text" style="font-weight: 600;">Software Engineering Intern — Amazon</span>
+            <p class="brown-text">Jan 2023 - Jun 2023</p>
+            <p style="margin-top: 10px;">Designed shadow testing environments using Java and Spring Boot. Integrated automated workflows for deployment safety via Maven/Git.</p>
           </div>
         </div>
+
       </div>
     </section>
 
     <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
+      <h3 class="page-title white-text teal">Technical Expertise</h3>
       <div class="container">
         <div class="card">
           <div class="card-content">
-            <h5>Programming Languages</h5><p>Python, Java, JavaScript, TypeScript, Go, C#, C++, R, C, PHP, Bash</p>
-            <h5>Front-End</h5><p>React.js, Redux, Next.js, HTML, CSS, JavaScript, TypeScript, AJAX, GraphQL</p>
-            <h5>Back-End</h5><p>Spring Boot, Node.js, Express.js, Django, .NET, C#, Microservices, REST APIs</p>
-            <h5>Cloud & Databases</h5><p>AWS, GCP, Azure, Apache Spark, MySQL, PostgreSQL, MongoDB, Redis</p>
+            <h6><i class="fa fa-code teal-text"></i> Languages & Frameworks</h6>
+            <div class="skill-container" style="margin-bottom: 20px;">
+              <span class="skill-chip">Java</span><span class="skill-chip">Python</span><span class="skill-chip">Spring Boot</span>
+              <span class="skill-chip">React.js</span><span class="skill-chip">TypeScript</span><span class="skill-chip">Node.js</span>
+            </div>
+            
+            <h6><i class="fa fa-cloud teal-text"></i> Cloud & Infrastructure</h6>
+            <div class="skill-container">
+              <span class="skill-chip">AWS (S3, Lambda)</span><span class="skill-chip">Docker</span><span class="skill-chip">Kubernetes</span>
+              <span class="skill-chip">PostgreSQL</span><span class="skill-chip">CI/CD</span><span class="skill-chip">Microservices</span>
+            </div>
           </div>
         </div>
       </div>
@@ -148,26 +143,31 @@
     <section id="education" class="section scrollspy">
       <h3 class="page-title white-text teal">Education</h3>
       <div class="container">
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Master's in Computer Science</span>
-            <p>University of Cincinnati (Aug 2025 - Present)</p>
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card-panel center-align teal lighten-5">
+              <h6 class="teal-text" style="font-weight: bold;">Master's in CS</h6>
+              <p>University of Cincinnati<br>2025 - Present</p>
+            </div>
           </div>
-        </div>
-        <div class="card">
-          <div class="card-content">
-            <span class="card-title">Bachelor's in Computer Science and Business Systems</span>
-            <p>VNR VJIET (Aug 2019 - Jun 2023)</p>
+          <div class="col s12 m6">
+            <div class="card-panel center-align teal lighten-5">
+              <h6 class="teal-text" style="font-weight: bold;">Bachelor's in CS</h6>
+              <p>VNR VJIET<br>2019 - 2023</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section id="contact" class="section scrollspy">
-      <h3 class="page-title white-text teal">Contact</h3>
-      <div class="container">
-        <p><strong>Email:</strong> suprajasrikanth872@gmail.com</p>
-        <p><strong>Location:</strong> Cincinnati, USA</p>
+      <h3 class="page-title white-text teal">Get In Touch</h3>
+      <div class="container center-align">
+        <div class="card-panel">
+          <p><i class="fa fa-envelope teal-text"></i> suprajasrikanth872@gmail.com</p>
+          <p><i class="fa fa-map-marker teal-text"></i> Cincinnati, USA</p>
+          <a href="mailto:suprajasrikanth872@gmail.com" class="btn waves-effect teal">Send Message</a>
+        </div>
       </div>
     </section>
   </main>
@@ -177,14 +177,12 @@
   <script src="//cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script>
     $(document).ready(function() {
-      $('.button-collapse').sideNav();
       $('.scrollspy').scrollSpy();
       
-      // Initializing the typing animation with your data
       new Typed('.typing', {
-        strings: ["Software Engineer", "Java Developer", "Cloud Computing Enthusiast"],
-        typeSpeed: 100,
-        backSpeed: 60,
+        strings: ["Software Engineer", "Java Developer", "Cloud Specialist"],
+        typeSpeed: 80,
+        backSpeed: 40,
         loop: true
       });
     });
