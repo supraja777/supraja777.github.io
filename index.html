@@ -6,45 +6,59 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
     <title>Supraja Srikanth | Software Engineer</title>
     
-    <meta name="description" content="Highly skilled software engineer with expertise in Java, Spring Boot, and cloud computing">
-    <meta property="og:title" content="Supraja Srikanth | Software Engineer">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="https://github.com/supraja777">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     
     <style>
-        body { background-color: #ffffff; color: #333; font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; }
-        nav.side-nav.fixed { width: 300px; background: #263238; border-right: 1px solid #eee; overflow-y: auto; }
-        nav.side-nav.fixed a { color: #cfd8dc !important; padding: 0 30px; }
-        nav.side-nav.fixed a:hover { background: #37474f !important; }
-        .profile-pic { width: 160px; height: 160px; margin: 40px auto; display: block; border: 3px solid #009688; border-radius: 50%; object-fit: cover; }
+        /* Typography Consistency */
+        html { font-size: 16px; }
+        body { 
+            background-color: #ffffff; 
+            color: #37474f; 
+            font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        /* Sidebar Standard */
+        nav.side-nav.fixed { width: 300px; background: #263238; }
+        nav.side-nav.fixed a { font-size: 1rem !important; color: #cfd8dc !important; }
         
         main { padding-left: 300px; }
         @media only screen and (max-width : 992px) { main { padding-left: 0; } }
 
-        section { padding: 80px 0; border-bottom: 1px solid #f0f0f0; }
-        .page-title { font-weight: 800; text-transform: uppercase; color: #009688; margin-bottom: 50px; }
+        /* Section Titles */
+        section { padding: 60px 0; border-bottom: 1px solid #f0f0f0; }
+        .page-title { 
+            font-size: 2.2rem; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            color: #009688; 
+            margin-bottom: 40px; 
+        }
+        
+        /* Font size standardization for content */
+        p, li, span { font-size: 1.05rem; }
+        .card-title { font-size: 1.4rem !important; font-weight: 700 !important; }
+        
+        /* Uniform Chip/Tag Styling */
+        .skill-tag { 
+            display: inline-block; 
+            padding: 5px 12px; 
+            margin: 4px; 
+            background: #e0f2f1; 
+            color: #00796b; 
+            border-radius: 4px; 
+            font-weight: 500; 
+            font-size: 0.9rem; /* Consistent tag size */
+        }
         
         .hero { min-height: 100vh; display: flex; align-items: center; background: #263238; color: #fff; }
         .teal-text { color: #4db6ac !important; }
-        
-        .card { border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
-        .skill-tag { display: inline-block; padding: 4px 12px; margin: 4px; background: #e0f2f1; color: #00796b; border-radius: 4px; font-weight: 500; font-size: 13px; }
-        .social-link { font-size: 24px; margin-right: 20px; color: #fff; }
-        .social-link:hover { color: #4db6ac; }
-        
-        #experience .card-title, #education .card-title { font-weight: 700 !important; color: #009688; font-size: 1.2rem; }
     </style>
 </head>
 <body>
-
     <ul id="nav-mobile" class="side-nav fixed">
-        <li class="logo">
-            <img src="" class="profile-pic" alt="Profile">
-        </li>
-        <li class="bold"><a href="#intro" class="waves-effect">Home</a></li>
+        <li class="logo"><img src="https://github.com/supraja777.png" class="circle" style="width:150px; margin:40px auto; display:block; border:3px solid #009688;"></li>
         
         <li class="bold"><a href="#intro" class="waves-effect">Home</a></li>
         <li class="bold"><a href="#about" class="waves-effect">About</a></li>
@@ -53,209 +67,171 @@
         <li class="bold"><a href="#skills" class="waves-effect">Skills</a></li>
         <li class="bold"><a href="#education" class="waves-effect">Education</a></li>
     
-        <li class="center" style="margin-top: 30px;">
-            <a href="" target="_blank" class="btn waves-effect waves-light teal">View Resume</a>
-        </li>
+        <li class="center" style="margin-top:30px;"><a href="https://github.com/supraja777/resume" class="btn teal">Resume</a></li>
     </ul>
 
     <main>
-        <section id="intro" class="hero">
+        <section id="intro" class="hero section scrollspy">
             <div class="container">
-                <h5 class="teal-text">Software Engineer Portfolio</h5>
-                <h1 style="font-weight: 900; margin: 10px 0;">Supraja Srikanth</h1>
-                <h4 style="font-weight: 300;">I am a <span class="typing teal-text"></span></h4>
-                <p class="flow-text" style="max-width: 800px; color: #b0bec5;">Welcome to my portfolio! I'm Supraja Srikanth, a software engineer with a passion for building scalable and efficient systems.</p>
-                <div style="margin-top: 30px;">
-                    <a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank" class="social-link"><i class="fa fa-linkedin"></i></a><a href="https://github.com/supraja777" target="_blank" class="social-link"><i class="fa fa-github"></i></a>
-                </div>
+                <h1 style="font-size: 3.5rem; font-weight: 900;">Supraja Srikanth</h1>
+                <h4 style="font-size: 1.8rem; font-weight: 300;">I am a <span class="typing teal-text"></span></h4>
+                <p style="font-size: 1.2rem; color: #b0bec5; margin-top: 20px;">I'm Supraja, a software engineer with a strong foundation in computer science and a drive to deliver high-quality solutions.</p>
+                <div style="margin-top: 30px;"><a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank" class="social-link" style="font-size: 2rem; color: #fff; margin-right: 20px;"><i class="fa fa-linkedin"></i></a><a href="https://github.com/supraja777" target="_blank" class="social-link" style="font-size: 2rem; color: #fff; margin-right: 20px;"><i class="fa fa-github"></i></a></div>
             </div>
         </section>
 
-        <section id="about" class="container">
+        <section id="about" class="container section scrollspy">
             <h3 class="page-title">About</h3>
-            <div class="row flow-text">
-                <p>I'm a highly motivated and detail-oriented software engineer with a strong background in computer science. I have a proven track record of delivering high-quality solutions on time and on budget. My expertise includes Java, Spring Boot, cloud computing, and DevOps. I'm passionate about staying up-to-date with the latest technologies and trends in the industry.</p>
-                <ul><li>Highly skilled in Java, Spring Boot, and cloud computing</li><li>Proven track record of delivering high-quality solutions on time and on budget</li><li>Strong background in computer science and software engineering</li><li>Passionate about staying up-to-date with the latest technologies and trends</li></ul>
-            </div>
+            <div class="flow-text"><p>As a highly motivated and detail-oriented software engineer, I have a strong background in computer science and a passion for building scalable and efficient systems. With a solid foundation in programming languages, front-end and back-end technologies, and databases, I am confident in my ability to deliver high-quality solutions. I am excited to leverage my skills and experience to drive innovation and growth in the tech industry.</p></div>
+            <ul style="font-size: 1.05rem;"><li>Strong foundation in computer science and software engineering</li><li>Proficient in a range of programming languages, including Python, Java, and JavaScript</li><li>Experienced in front-end and back-end technologies, including React, Spring Boot, and Node.js</li><li>Skilled in database management, including MySQL, PostgreSQL, and MongoDB</li></ul>
         </section>
 
-        <section id="experience" class="container">
+        <section id="experience" class="container section scrollspy">
             <h3 class="page-title">Experience</h3>
             
     <div class="card">
         <div class="card-content">
             <span class="card-title">Application Developer — <span class="teal-text">ThoughtWorks</span></span>
-            <p style="color: #757575; font-weight: 500; margin-bottom: 10px;">Jan 2024 - Jul 2025</p>
-            <p>Accomplished a 30% boost in customer experience by engineering bill notifications and alerts within the distributed autopay platform using Spring Boot and Java, as measured by consistent payment reminders, by leveraging software design patterns to build reliable and modular components. Accomplished a 1.5% reduction in payment failure rates by architecting a robust recurring mandate protocol for autopay, as measured by instantaneous payments after bill production, by confirming payments and maximizing payment efficiency. Accomplished a 75ms decrease in payment processing latency by optimizing BBPS APIs, as measured by accelerated bill and biller data retrieval, by enhancing performance, scalability, and customer satisfaction in real-time transactions.</p>
+            <p style="color: #757575; font-weight: 500; font-size: 1.05rem; margin-bottom: 10px;">Jan 2024 - Jul 2025</p>
+            <p style="font-size: 1.05rem;">Accomplished a 30% boost in customer experience by engineering bill notifications and alerts within the distributed autopay platform, as measured by consistent payment reminders, by doing software design patterns to build reliable, modular components. Accomplished a 1.5% decrease in payment failure rates by architecting a robust recurring mandate protocol for autopay, as measured by instantaneous payments after bill production, by doing confirmation of payments. Accomplished a 75ms decrease in payment processing latency by optimizing BBPS APIs, as measured by accelerated bill and biller data retrieval, by doing performance optimization. Accomplished a 25% increase in concurrent processing capabilities by implementing Redis Pub/Sub architecture, as measured by decreased execution latency for high-demand distributed workflows, by doing system responsiveness improvement. Accomplished a 10% optimization in database performance by automating database updates, as measured by improved data integrity across systems, by doing database maintenance automation.</p>
         </div>
     </div>
     
     <div class="card">
         <div class="card-content">
             <span class="card-title">Software Engineer — <span class="teal-text">KAS Commerce</span></span>
-            <p style="color: #757575; font-weight: 500; margin-bottom: 10px;">Oct 2023 - Jan 2024</p>
-            <p>Accomplished a 150ms optimization in API response time for Stripe transactions, as measured by key performance indicators (KPIs) on transaction latency, by tracking and enhancing user experience during checkout. Accomplished a 40% reduction in manual verification time by implementing Amazon OAuth for user registration and authentication, as measured by accelerated onboarding, by improving system performance, security, and user experience.</p>
+            <p style="color: #757575; font-weight: 500; font-size: 1.05rem; margin-bottom: 10px;">Oct 2023 - Jan 2024</p>
+            <p style="font-size: 1.05rem;">Accomplished a 150ms optimization in API response time for Stripe transactions, as measured by tracking key performance indicators (KPIs) on transaction latency, by doing performance optimization. Accomplished a 40% reduction in manual verification time by implementing Amazon OAuth for user registration and authentication, as measured by accelerated onboarding, by doing system performance and security improvement. Accomplished a 30% increase in dashboard usage by building interactive business intelligence dashboards using React and PostgreSQL, as measured by faster data-driven decisions, by doing data visualization.</p>
         </div>
     </div>
     
     <div class="card">
         <div class="card-content">
             <span class="card-title">Software Engineering Intern — <span class="teal-text">Amazon</span></span>
-            <p style="color: #757575; font-weight: 500; margin-bottom: 10px;">Jan 2023 - Jun 2023</p>
-            <p>Accomplished an 8% increase in code coverage by designing a shadow testing environment with Java, Spring Boot, and AWS, as measured by augmented code coverage, by refactoring legacy code and enhancing maintainability. Accomplished a 12% reduction in technical debt by refactoring legacy code, as measured by improved maintainability, by reducing technical debt and enhancing code quality.</p>
+            <p style="color: #757575; font-weight: 500; font-size: 1.05rem; margin-bottom: 10px;">Jan 2023 - Jun 2023</p>
+            <p style="font-size: 1.05rem;">Accomplished an 8% increase in code coverage by designing a shadow testing environment with Java, Spring Boot, and AWS, as measured by augmented code coverage, by doing testing environment design. Accomplished a 12% reduction in technical debt by refactoring legacy code, as measured by enhanced maintainability, by doing code refactoring. Accomplished a substantial reduction in post-deployment bugs by debugging rate card logic leveraging JUnit, Mockito, and EasyMock, as measured by elevated test coverage, by doing comprehensive integration testing.</p>
         </div>
     </div>
     
     <div class="card">
         <div class="card-content">
             <span class="card-title">Software Engineering Intern — <span class="teal-text">Giottus Technologies Pvt Ltd</span></span>
-            <p style="color: #757575; font-weight: 500; margin-bottom: 10px;">Jun 2022 - Jul 2022</p>
-            <p>Accomplished a 15% decrease in API latency by integrating cryptocurrency order book API using React.js and Python, as measured by improved real-time market data access and platform responsiveness, by decreasing API latency and improving platform responsiveness.</p>
+            <p style="color: #757575; font-weight: 500; font-size: 1.05rem; margin-bottom: 10px;">Jun 2022 - Jul 2022</p>
+            <p style="font-size: 1.05rem;">Accomplished a 15% decrease in API latency by integrating cryptocurrency order book API using React.js and Python, as measured by improved real-time market data access, by doing API integration. Accomplished a 7% reduction in data errors by cleaning and preprocessing 75 GB of cryptocurrency transaction data using Pandas and NumPy, as measured by improved model reliability, by doing data preprocessing.</p>
         </div>
     </div>
     
         </section>
 
-        <section id="projects" class="container">
+        <section id="projects" class="container section scrollspy">
             <h3 class="page-title">Projects</h3>
             <div class="row">
     <div class="col s12 m6">
         <div class="card hoverable">
-            <div class="card-content" style="min-height: 240px;">
-                <span class="card-title teal-text" style="font-weight: bold;">Autopay Platform</span>
-                <p>Engineered bill notifications and alerts within the distributed autopay platform using Spring Boot and Java</p>
+            <div class="card-content" style="min-height: 250px;">
+                <span class="card-title teal-text">GPT-From-Scratch</span>
+                <p style="font-size: 1.05rem;">Implemented a Generative Pre-trained Transformer (GPT) from scratch using Python, Pytorch, including BPE tokenization, multi-head self-attention, positional embeddings, transformer blocks, and end-to-end training and inference pipelines for autoregressive language modeling.</p>
                 <div style="margin-top: 15px;">
-                    <span class="skill-tag">Java</span> <span class="skill-tag">Spring Boot</span> <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Python</span> <span class="skill-tag">Pytorch</span> <span class="skill-tag">BPE tokenization</span> <span class="skill-tag">multi-head self-attention</span>
                 </div>
             </div>
             <div class="card-action">
-                <a href="#" target="_blank" class="teal-text">View Project</a>
+                <a href="https://github.com/supraja777/GPT-From-Scratch" target="_blank" class="teal-text" style="font-weight:600;">View Project</a>
             </div>
         </div>
     </div>
     
     <div class="col s12 m6">
         <div class="card hoverable">
-            <div class="card-content" style="min-height: 240px;">
-                <span class="card-title teal-text" style="font-weight: bold;">Recurring Mandate Protocol</span>
-                <p>Architected a robust recurring mandate protocol for autopay</p>
+            <div class="card-content" style="min-height: 250px;">
+                <span class="card-title teal-text">All-RAG-Techniques</span>
+                <p style="font-size: 1.05rem;">Engineered scalable Retrieval-Augmented Generation (RAG) pipelines implementing dense embeddings, vector search, semantic chunking, query rewriting, reranking, and contextual compression to improve LLM retrieval accuracy.</p>
                 <div style="margin-top: 15px;">
-                    <span class="skill-tag">Java</span> <span class="skill-tag">Spring Boot</span> <span class="skill-tag">Azure</span>
+                    <span class="skill-tag">Python</span> <span class="skill-tag">RAG</span> <span class="skill-tag">dense embeddings</span> <span class="skill-tag">vector search</span>
                 </div>
             </div>
             <div class="card-action">
-                <a href="#" target="_blank" class="teal-text">View Project</a>
+                <a href="https://github.com/supraja777/All-RAG-Techniques" target="_blank" class="teal-text" style="font-weight:600;">View Project</a>
             </div>
         </div>
     </div>
     
     <div class="col s12 m6">
         <div class="card hoverable">
-            <div class="card-content" style="min-height: 240px;">
-                <span class="card-title teal-text" style="font-weight: bold;">API Optimization</span>
-                <p>Optimized API response time for Stripe transactions</p>
+            <div class="card-content" style="min-height: 250px;">
+                <span class="card-title teal-text">Dual-Agent-Debate</span>
+                <p style="font-size: 1.05rem;">Built a dual-agent LLM debate system in Python leveraging agent orchestration, state-driven workflows, prompt engineering, memory management, and multi-round reasoning to enable structured argument generation, contextual refinement, and final response synthesis.</p>
                 <div style="margin-top: 15px;">
-                    <span class="skill-tag">JavaScript</span> <span class="skill-tag">React</span> <span class="skill-tag">NodeJS</span>
+                    <span class="skill-tag">Python</span> <span class="skill-tag">LLM</span> <span class="skill-tag">agent orchestration</span> <span class="skill-tag">state-driven workflows</span>
                 </div>
             </div>
             <div class="card-action">
-                <a href="#" target="_blank" class="teal-text">View Project</a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="col s12 m6">
-        <div class="card hoverable">
-            <div class="card-content" style="min-height: 240px;">
-                <span class="card-title teal-text" style="font-weight: bold;">Shadow Testing Environment</span>
-                <p>Designed a shadow testing environment with Java, Spring Boot, and AWS</p>
-                <div style="margin-top: 15px;">
-                    <span class="skill-tag">Java</span> <span class="skill-tag">Spring Boot</span> <span class="skill-tag">AWS</span>
-                </div>
-            </div>
-            <div class="card-action">
-                <a href="#" target="_blank" class="teal-text">View Project</a>
+                <a href="https://github.com/supraja777/Dual-Agent-Debate-Pattern" target="_blank" class="teal-text" style="font-weight:600;">View Project</a>
             </div>
         </div>
     </div>
     </div>
         </section>
 
-        <section id="skills" class="container">
+        <section id="skills" class="container section scrollspy">
             <h3 class="page-title">Skills</h3>
             <div class="card"><div class="card-content">
     <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">programming_languages</h6>
+        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem; letter-spacing: 1px;">programming_languages</h6>
         <span class="skill-tag">Python</span> <span class="skill-tag">Java</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">TypeScript</span> <span class="skill-tag">Go</span> <span class="skill-tag">C#</span> <span class="skill-tag">C++</span> <span class="skill-tag">R</span> <span class="skill-tag">C</span> <span class="skill-tag">PHP</span> <span class="skill-tag">Bash</span>
     </div>
     
     <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">front_end_technologies</h6>
+        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem; letter-spacing: 1px;">front_end_technologies</h6>
         <span class="skill-tag">React.js</span> <span class="skill-tag">Redux</span> <span class="skill-tag">Next.js</span> <span class="skill-tag">HTML</span> <span class="skill-tag">CSS</span> <span class="skill-tag">JavaScript</span> <span class="skill-tag">TypeScript</span> <span class="skill-tag">AJAX</span> <span class="skill-tag">GraphQL</span> <span class="skill-tag">WebSockets</span>
     </div>
     
     <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">back_end_technologies</h6>
+        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem; letter-spacing: 1px;">back_end_technologies</h6>
         <span class="skill-tag">Spring Boot</span> <span class="skill-tag">Node.js</span> <span class="skill-tag">Express.js</span> <span class="skill-tag">Django</span> <span class="skill-tag">.NET</span> <span class="skill-tag">C#</span> <span class="skill-tag">Microservices</span> <span class="skill-tag">REST APIs</span> <span class="skill-tag">Spring Web MVC</span>
     </div>
     
     <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">cloud_and_big_data</h6>
-        <span class="skill-tag">AWS (S3, Glue, Lambda)</span> <span class="skill-tag">Google Cloud Platform (BigQuery, AI Platform)</span> <span class="skill-tag">Azure (ML, Functions)</span> <span class="skill-tag">Apache Spark / PySpark</span> <span class="skill-tag">Hadoop HDFS</span> <span class="skill-tag">Apache Airflow</span> <span class="skill-tag">Apache Hive</span> <span class="skill-tag">AWS ECS</span>
-    </div>
-    
-    <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">databases</h6>
+        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem; letter-spacing: 1px;">databases</h6>
         <span class="skill-tag">MySQL</span> <span class="skill-tag">PostgreSQL</span> <span class="skill-tag">Oracle</span> <span class="skill-tag">PL/SQL</span> <span class="skill-tag">Snowflake</span> <span class="skill-tag">DynamoDB</span> <span class="skill-tag">MongoDB</span> <span class="skill-tag">NoSQL</span> <span class="skill-tag">Stored Procedures</span> <span class="skill-tag">Redis</span>
-    </div>
-    
-    <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">devops_and_containerization</h6>
-        <span class="skill-tag">Docker</span> <span class="skill-tag">Kubernetes</span> <span class="skill-tag">Jenkins</span> <span class="skill-tag">Virtualization</span> <span class="skill-tag">CI/CD pipelines (GitHub Actions, GitLab CI)</span>
-    </div>
-    
-    <div style="margin-bottom: 25px;">
-        <h6 style="font-weight: 700; text-transform: uppercase; color: #00796b; font-size: 0.9rem;">ai_ml_and_data_science_technologies</h6>
-        <span class="skill-tag">Large Language Models (LLMs)</span> <span class="skill-tag">Retrieval-Augmented Generation (RAG)</span> <span class="skill-tag">TensorFlow Keras</span> <span class="skill-tag">CUDA</span> <span class="skill-tag">PyTorch</span> <span class="skill-tag">Natural Language Processing (NLP)</span> <span class="skill-tag">HuggingFace</span> <span class="skill-tag">LangChain</span> <span class="skill-tag">LangGraph</span> <span class="skill-tag">LangSmith</span>
     </div>
     </div></div>
         </section>
 
-        <section id="education" class="container">
+        <section id="education" class="container section scrollspy">
             <h3 class="page-title">Education</h3>
             
     <div class="card">
         <div class="card-content">
-            <span class="card-title" style="font-weight: bold;">Master's in Computer Science</span>
-            <p style="font-size: 1.1rem; margin: 5px 0;">University of Cincinnati | Aug 2025 - Present</p>
+            <span class="card-title">Master's in Computer Science</span>
+            <p style="font-size: 1.05rem; margin: 5px 0;">University of Cincinnati | Aug 2025 - Present</p>
             
             <div style="margin-top: 15px;">
-                <p style="font-size:0.85rem; font-weight:700; color:#9e9e9e; text-transform:uppercase; margin-bottom:8px;">Relevant Coursework</p>
-                <span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Artificial Intelligence</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Machine Learning</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Data Structures and Algorithms</span>
+                <p style="font-size:0.85rem; font-weight:700; color:#9e9e9e; text-transform:uppercase; margin-bottom:8px; letter-spacing:1px;">Relevant Coursework</p>
+                <span class="skill-tag" style="background:#f5f5f5; color:#616161;">Artificial Intelligence</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Machine Learning</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Data Structures and Algorithms</span>
             </div>
         </div>
     </div>
     
     <div class="card">
         <div class="card-content">
-            <span class="card-title" style="font-weight: bold;">Bachelor's in Computer Science and Business Systems</span>
-            <p style="font-size: 1.1rem; margin: 5px 0;">VNR VJIET | Aug 2019 - Jun 2023</p>
-            <p class="teal-text" style="font-weight:600;">CGPA: 3.4</p>
+            <span class="card-title">Bachelor's in Computer Science and Business Systems</span>
+            <p style="font-size: 1.05rem; margin: 5px 0;">VNR VJIET | Aug 2019 - Jun 2023</p>
+            <p class="teal-text" style="font-weight:600; font-size: 1.05rem;">CGPA: 3.4</p>
             <div style="margin-top: 15px;">
-                <p style="font-size:0.85rem; font-weight:700; color:#9e9e9e; text-transform:uppercase; margin-bottom:8px;">Relevant Coursework</p>
-                <span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Database Management Systems</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Computer Engineering</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Statistics</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Deep Learning</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Cloud Computing</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Object-Oriented Programming (OOP)</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Software Development Lifecycle (SDLC)</span><span class="skill-tag" style="background:#f5f5f5; color:#616161; font-size:0.75rem;">Distributed Systems</span>
+                <p style="font-size:0.85rem; font-weight:700; color:#9e9e9e; text-transform:uppercase; margin-bottom:8px; letter-spacing:1px;">Relevant Coursework</p>
+                <span class="skill-tag" style="background:#f5f5f5; color:#616161;">Reinforcement learning</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Deep learning</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Data Mining</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Software Development Lifecycle</span><span class="skill-tag" style="background:#f5f5f5; color:#616161;">Distributed Systems</span>
             </div>
         </div>
     </div>
     
         </section>
 
-        <section id="contact" class="container center">
+        <section id="contact" class="container center section scrollspy">
             <h3 class="page-title">Contact</h3>
             <div class="card-panel">
-                <p><b>Email:</b> suprajasrikanth872@gmail.com</p><p><b>Location:</b> Hyderabad, India</p>
-                <br>
-                <a href="mailto:suprajasrikanth872@gmail.com" class="btn-large teal waves-effect">Send Email</a>
+                <p style="font-size: 1.1rem;"><b>Email:</b> suprajasrikanth29@gmail.com</p><p style="font-size: 1.1rem;"><b>Location:</b> Hyderabad, India</p>
+                <a href="mailto:suprajasrikanth29@gmail.com" class="btn-large teal" style="margin-top:20px;">Get In Touch</a>
             </div>
         </section>
     </main>
@@ -267,10 +243,8 @@
         $(document).ready(function(){
             $('.scrollspy').scrollSpy();
             new Typed('.typing', {
-                strings: ["Cloud Architect", "Java Specialist", "Full-Stack Developer", "DevOps Engineer"],
-                typeSpeed: 50,
-                backSpeed: 30,
-                loop: true
+                strings: ["Full Stack Developer", "Backend Engineer", "Cloud Architect", "DevOps Engineer"],
+                typeSpeed: 50, backSpeed: 30, loop: true
             });
         });
     </script>
