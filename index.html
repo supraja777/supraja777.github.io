@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -5,204 +6,169 @@
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-PGZH8HT');</script>
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+  
   <title>Supraja Srikanth | Software Engineer</title>
 
-  <meta property="og:locale" content="en_US" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Supraja Srikanth | Software Engineer" />
-  <meta property="og:description" content="Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing." />
-  <meta property="og:url" content="https://github.com/supraja777" />
-  <meta property="og:image" content="https://via.placeholder.com/400x400" />
-  
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Supraja Srikanth | Software Engineer" />
-  <meta name="twitter:description" content="Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing." />
-  <meta name="author" content="Supraja Srikanth" />
-  <meta name="description" content="Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing." />
-
-  <meta name="theme-color" content="#ffffff" />
-  <meta name="robots" content="index, follow" />
+  <style>
+    /* Essential layout fixes for the template */
+    body { padding-left: 300px; }
+    @media only screen and (max-width : 992px) { body { padding-left: 0; } }
+    nav.side-nav.fixed { width: 300px; }
+    .profile-pic { width: 80%; margin: 20px auto; display: block; }
+    section { padding-top: 50px; padding-bottom: 50px; }
+    .teal { background-color: #009688 !important; }
+    .teal-text { color: #009688 !important; }
+    .full-height { min-height: 100vh; display: flex; align-items: center; }
+  </style>
 </head>
 
 <body>
-  <nav class="hide-on-small-only">
-    <ul class="side-nav fixed section table-of-contents">
-      <li class="logo">
-        <a id="logo-container" href="#intro" class="brand-logo grey-blue-text">
-          <img src="https://via.placeholder.com/200x200" class="circle img-responsive profile-pic" alt="avatar">
-        </a>
-      </li>
-      
-      <li class="bold"><a href="#about" class="waves-effect teal-text">About</a></li>
-      <li class="bold"><a href="#experience" class="waves-effect teal-text">Experience</a></li>
-      <li class="bold"><a href="#projects" class="waves-effect teal-text">Projects</a></li>
-      <li class="bold"><a href="#skills" class="waves-effect teal-text">Skills</a></li>
-      <li class="bold"><a href="#education" class="waves-effect teal-text">Education</a></li>
-      <li class="bold"><a href="#contact" class="waves-effect teal-text">Contact</a></li>
-      
-      <li class="bold">
-        <a href="https://via.placeholder.com/1000x1000" target="_blank" class="waves-effect waves-dark teal-text">
-            <i class="mdi-file-folder-open small"></i><span>Resume</span>
-        </a>  
-      </li>
-    </ul>
-  </nav>
 
-  <nav class="hide-on-large only trigger z-depth-1">
-    <div class="name-title">
-      <a id="name" href="#" class="teal-text">Supraja Srikanth</a>
-      <span class="black-text">Software Engineer</span>
-    </div>
-  </nav>
+  <ul id="slide-out" class="side-nav fixed section table-of-contents">
+    <li class="logo">
+      <a id="logo-container" href="#intro" class="brand-logo">
+        <img src="https://via.placeholder.com/200x200" class="circle img-responsive profile-pic" alt="avatar">
+      </a>
+    </li>
+    <li class="bold"><a href="#about" class="waves-effect teal-text"><i class="fa fa-user"></i> About</a></li>
+    <li class="bold"><a href="#experience" class="waves-effect teal-text"><i class="fa fa-briefcase"></i> Experience</a></li>
+    <li class="bold"><a href="#projects" class="waves-effect teal-text"><i class="fa fa-code"></i> Projects</a></li>
+    <li class="bold"><a href="#skills" class="waves-effect teal-text"><i class="fa fa-tasks"></i> Skills</a></li>
+    <li class="bold"><a href="#education" class="waves-effect teal-text"><i class="fa fa-graduation-cap"></i> Education</a></li>
+    <li class="bold"><a href="#contact" class="waves-effect teal-text"><i class="fa fa-envelope"></i> Contact</a></li>
+    <li class="bold"><a href="https://via.placeholder.com/1000x1000" target="_blank" class="waves-effect teal-text"><i class="fa fa-file-text"></i> Resume</a></li>
+  </ul>
 
   <main>
     <section id="intro" class="section scrollspy full-height">
       <div class="container">
-        <div class="col-md-9">
-          <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
-            <div class="caption">
-              <h2>Hi, I'm <span class="teal">Supraja Srikanth.</span></h2>
-              <h5>Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing.</h5>
+        <h2>Hi, I'm <span class="teal-text">Supraja Srikanth.</span></h2>
+        <h5>I am a <span class="typing teal-text" style="font-weight: 500;"></span></h5>
+        <p class="flow-text">Highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing.</p>
+        <div class="social-links">
+            <a href="https://github.com/supraja777" target="_blank" class="btn-floating btn-large waves-effect waves-light teal"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank" class="btn-floating btn-large waves-effect waves-light teal"><i class="fa fa-linkedin"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section scrollspy">
+      <h3 class="page-title white-text teal" style="padding: 10px 20px;">About</h3>
+      <div class="container">
+        <div class="card-content">
+            <p class="flow-text">I'm a highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing. I'm passionate about building scalable and efficient systems, and I'm always looking to learn and improve my skills.</p>
+            <ul>
+                <li><b>✓</b> Highly motivated and detail-oriented</li>
+                <li><b>✓</b> Experience with Java, Spring Boot, and cloud computing</li>
+                <li><b>✓</b> Passionate about building scalable and efficient systems</li>
+            </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section scrollspy">
+      <h3 class="page-title white-text teal" style="padding: 10px 20px;">Experience</h3>
+      <div class="container">
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title teal-text">Application Developer — ThoughtWorks</span>
+            <p><em>Jan 2024 - Jul 2025</em></p>
+            <p>Engineered bill notifications and alerts within the distributed autopay platform using Spring Boot and Java. Architected a robust recurring mandate protocol for autopay. Decreased payment processing latency by 75ms by optimizing BBPS APIs.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title teal-text">Software Engineer — KAS Commerce</span>
+            <p><em>Oct 2023 - Jan 2024</em></p>
+            <p>Optimized API response time for Stripe transactions by 150ms. Implemented Amazon OAuth for user registration and authentication. Built interactive business intelligence dashboards using React and PostgreSQL for data visualization.</p>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-content">
+              <span class="card-title teal-text">Software Engineering Intern — Amazon</span>
+              <p><em>Jan 2023 - Jun 2023</em></p>
+              <p>Designed a shadow testing environment with Java, Spring Boot, and AWS. Debugged rate card logic leveraging JUnit, Mockito, and EasyMock for comprehensive integration testing.</p>
             </div>
-            <div class="social">
-              <a href="https://github.com/supraja777" target="_blank"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/suprajasrikanth/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section scrollspy">
+      <h3 class="page-title white-text teal" style="padding: 10px 20px;">Projects</h3>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title teal-text">Autopay Platform</span>
+                <p>A distributed autopay platform built using Spring Boot and Java.</p>
+                <p><strong>Tech:</strong> Java, Spring Boot</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title teal-text">Business Intelligence Dashboard</span>
+                <p>Interactive dashboard built using React and PostgreSQL.</p>
+                <p><strong>Tech:</strong> React, PostgreSQL</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="about" class="section scrollspy">
-      <h3 class="page-title white-text teal">About</h3>
-      <div class="container flow-text">
-        <p>I'm a highly motivated and detail-oriented software engineer with experience in Java, Spring Boot, and cloud computing. I'm passionate about building scalable and efficient systems, and I'm always looking to learn and improve my skills.</p>
-        <ul><li>Highly motivated and detail-oriented</li><li>Experience with Java, Spring Boot, and cloud computing</li><li>Passionate about building scalable and efficient systems</li></ul>
-        <p>Looking for an opportunity to work in a challenging position combining my skills in Software Engineering, which provides professional development, interesting experiences and personal growth.</p>
-      </div>
-    </section>
-
-    <section id="experience" class="section scrollspy">
-      <h3 class="page-title white-text teal">Experience</h3>
-      <div class="container">
-        
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Application Developer — ThoughtWorks</span>
-        <em>Jan 2024 - Jul 2025</em>
-        <p>Engineered bill notifications and alerts within the distributed autopay platform using Spring Boot and Java. Architected a robust recurring mandate protocol for autopay. Decreased payment processing latency by 75ms by optimizing BBPS APIs.</p>
-      </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Software Engineer — KAS Commerce</span>
-        <em>Oct 2023 - Jan 2024</em>
-        <p>Optimized API response time for Stripe transactions by 150ms. Implemented Amazon OAuth for user registration and authentication. Built interactive business intelligence dashboards using React and PostgreSQL for data visualization.</p>
-      </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Software Engineering Intern — Amazon</span>
-        <em>Jan 2023 - Jun 2023</em>
-        <p>Designed a shadow testing environment with Java, Spring Boot, and AWS. Debugged rate card logic leveraging JUnit, Mockito, and EasyMock for comprehensive integration testing. Initiated an automated approval workflow to promptly detect Brazil package violations during pipeline deployments via Maven and Git.</p>
-      </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Software Engineering Intern — Giottus Technologies Pvt Ltd</span>
-        <em>Jun 2022 - Jul 2022</em>
-        <p>Integrated cryptocurrency order book API using React.js and Python. Cleaned and preprocessed 75 GB of cryptocurrency transaction data using Pandas and NumPy.</p>
-      </div>
-    </div>
-    
-      </div>
-    </section>
-
-    <section id="projects" class="section scrollspy">
-      <h3 class="page-title white-text teal">Projects</h3>
-      <div class="container">
-        <div class="row">
-          
-    <div class="col s12 m6 l4">
-      <div class="card medium">
-        <div class="card-content">
-          <span class="card-title">Autopay Platform</span>
-          <p>A distributed autopay platform built using Spring Boot and Java.</p>
-          <p><strong>Tech:</strong> Java, Spring Boot</p>
-        </div>
-        <div class="card-action">
-          <a href="" target="_blank">View</a>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col s12 m6 l4">
-      <div class="card medium">
-        <div class="card-content">
-          <span class="card-title">Business Intelligence Dashboard</span>
-          <p>An interactive business intelligence dashboard built using React and PostgreSQL.</p>
-          <p><strong>Tech:</strong> React, PostgreSQL</p>
-        </div>
-        <div class="card-action">
-          <a href="" target="_blank">View</a>
-        </div>
-      </div>
-    </div>
-    
-        </div>
-      </div>
-    </section>
-
     <section id="skills" class="section scrollspy">
-      <h3 class="page-title white-text teal">Skills</h3>
-      <div class="container">
-        <h5>Programming Languages</h5><p>Python, Java, JavaScript, TypeScript, Go, C#, C++, R, C, PHP, Bash</p><h5>Front-End Technologies</h5><p>React.js, Redux, Next.js, HTML, CSS, JavaScript, TypeScript, AJAX, GraphQL, WebSockets</p><h5>Back-End Technologies</h5><p>Spring Boot, Node.js, Express.js, Django, .NET, C#, Microservices, REST APIs, Spring Web MVC</p><h5>Cloud and Big Data</h5><p>AWS (S3, Glue, Lambda), Google Cloud Platform (BigQuery, AI Platform), Azure (ML, Functions), Apache Spark / PySpark, Hadoop HDFS, Apache Airflow, Apache Hive, AWS ECS</p><h5>Databases</h5><p>MySQL, PostgreSQL, Oracle, PL/SQL, Snowflake, DynamoDB, MongoDB, NoSQL, Stored Procedures, Redis</p><h5>DevOps and Containerization</h5><p>Docker, Kubernetes, Jenkins, Virtualization, CI/CD pipelines (GitHub Actions, GitLab CI)</p><h5>AI/ML and Data Science Technologies</h5><p>Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), TensorFlow Keras, CUDA, PyTorch, Natural Language Processing (NLP), HuggingFace, LangChain, LangGraph, LangSmith</p>
-      </div>
+        <h3 class="page-title white-text teal" style="padding: 10px 20px;">Skills</h3>
+        <div class="container">
+            <div class="card"><div class="card-content">
+                <h5>Programming Languages</h5><p>Python, Java, JavaScript, TypeScript, Go, C#, C++, R, C, PHP, Bash</p>
+                <h5>Back-End Technologies</h5><p>Spring Boot, Node.js, Express.js, Django, Microservices, REST APIs</p>
+                <h5>Cloud and Big Data</h5><p>AWS (S3, Glue, Lambda), GCP, Azure, Apache Spark, Hadoop, Airflow</p>
+                <h5>Databases</h5><p>MySQL, PostgreSQL, Oracle, PL/SQL, Snowflake, DynamoDB, MongoDB, Redis</p>
+            </div></div>
+        </div>
     </section>
 
     <section id="education" class="section scrollspy">
-      <h3 class="page-title white-text teal">Education</h3>
+      <h3 class="page-title white-text teal" style="padding: 10px 20px;">Education</h3>
       <div class="container">
-        
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Master's in Computer Science</span>
-        <p>University of Cincinnati (Aug 2025 - Present)</p>
-      </div>
-    </div>
-    
-    <div class="card">
-      <div class="card-content">
-        <span class="card-title">Bachelor's in Computer Science and Business Systems</span>
-        <p>VNR VJIET (Aug 2019 - Jun 2023)</p>
-      </div>
-    </div>
-    
+        <div class="card">
+          <div class="card-content">
+            <span class="card-title teal-text">Master's in Computer Science</span>
+            <p>University of Cincinnati (Aug 2025 - Present)</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="contact" class="section scrollspy">
-      <h3 class="page-title white-text teal">Contact</h3>
+      <h3 class="page-title white-text teal" style="padding: 10px 20px;">Contact</h3>
       <div class="container">
-        
-<p><strong>Email:</strong> suprajasrikanth872@gmail.com</p>
-<p><strong>Location:</strong> Cincinnati, USA</p>
-
+        <p><strong>Email:</strong> suprajasrikanth872@gmail.com</p>
+        <p><strong>Location:</strong> Cincinnati, USA</p>
       </div>
     </section>
   </main>
 
-  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    $(document).ready(function(){
+      $('.scrollspy').scrollSpy();
+      
+      // Typing effect initialization
+      new Typed('.typing', {
+        strings: ["Software Engineer", "Java Developer", "Cloud Computing Enthusiast"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+      });
+    });
+  </script>
 </body>
 </html>
