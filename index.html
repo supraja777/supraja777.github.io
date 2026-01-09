@@ -9,17 +9,16 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/css/materialize.min.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
     
     <style>
-        /* Global Reset */
         body { 
             background-color: #fbfbfb; 
             color: #444; 
             font-family: 'Poppins', sans-serif; 
         }
 
-        /* Sidebar Layout */
+        /* Sidebar Spacing Fixes */
         header, main, footer { padding-left: 300px; }
         @media only screen and (max-width : 992px) { header, main, footer { padding-left: 0; } }
         
@@ -29,75 +28,61 @@
             border-right: 1px solid rgba(0,0,0,0.05); 
             box-shadow: none; 
         }
-
-        /* Sidebar Header/Logo Area */
-        .side-nav .logo { 
-            padding: 40px 20px; 
-            text-align: center; 
-            background: #009688;
-            margin-bottom: 10px;
-        }
         
-        .side-nav .logo img { 
-            width: 110px; 
-            height: 110px;
-            border: 3px solid rgba(255,255,255,0.2); 
-            margin-bottom: 15px;
-        }
-
-        /* Sidebar Menu Items - FIXED SPACING */
+        /* Navigation Item Spacing */
         .side-nav li {
-            line-height: 54px; /* Increased height for even spacing */
+            line-height: 54px; /* Increases vertical height of each item */
         }
 
         .side-nav li a {
-            padding: 0 35px !important; /* Balanced left/right padding */
-            font-size: 1.05rem !important;
+            font-size: 1.1rem !important;
             font-weight: 400 !important;
+            padding: 0 30px !important; /* Balanced horizontal padding */
             display: flex;
             align-items: center;
             height: 54px;
-            transition: all 0.3s ease;
+            transition: background-color 0.3s ease;
         }
 
-        .side-nav li a i.fa {
-            margin-right: 25px !important; /* Spacing between icon and text */
-            font-size: 1.2rem !important;
-            width: 25px;
+        .side-nav li a i {
+            margin-right: 20px !important; /* Spacing between icon and text */
+            font-size: 1.3rem !important;
+            width: 2rem;
             text-align: center;
         }
 
-        .side-nav li a:hover {
-            background-color: rgba(0, 150, 136, 0.08) !important;
-            color: #009688 !important;
+        .side-nav .logo { 
+            padding: 60px 20px; 
+            text-align: center; 
+            margin-bottom: 20px;
+            background: #fbfbfb;
         }
 
-        /* Modern Hero Section */
+        /* Active/Hover State */
+        .side-nav li:hover, .side-nav li.active {
+            background-color: rgba(0, 150, 136, 0.05);
+        }
+
+        /* Intro/Hero Section */
         #intro { 
-            background: linear-gradient(rgba(38, 50, 56, 0.75), rgba(38, 50, 56, 0.75)), 
-                        url('https://images.unsplash.com/photo-1497215728101-856f4ea42174?auto=format&fit=crop&w=1600&q=80');
-            background-size: cover;
-            background-position: center;
+            background: #263238;
             color: white; 
             min-height: 100vh; 
             display: flex; 
             align-items: center; 
         }
-
-        /* Content Sections */
-        section { padding-top: 80px; padding-bottom: 80px; }
-        .page-title { 
-            color: #009688; 
-            font-weight: 700; 
-            text-transform: uppercase; 
-            letter-spacing: 4px; 
-            font-size: 2.2rem;
-            margin-bottom: 50px;
+        
+        section {
+            padding-top: 60px;
+            padding-bottom: 60px;
         }
 
-        .card { 
-            border-radius: 12px; 
-            box-shadow: 0 4px 20px rgba(0,0,0,0.05) !important;
+        .page-title { 
+            color: #009688; 
+            font-weight: 800; 
+            text-transform: uppercase; 
+            letter-spacing: 4px;
+            margin-bottom: 30px;
         }
 
         .skill-tag { 
@@ -107,54 +92,55 @@
             background: #e0f2f1; 
             color: #00796b; 
             border-radius: 50px; 
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-weight: 600; 
+            font-size: 0.9rem;
         }
 
         .typing { color: #4db6ac; font-weight: 600; }
-        
-        .btn-large.teal {
-            border-radius: 50px;
-            text-transform: none;
-            font-weight: 500;
+
+        .card {
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05) !important;
         }
+
+        .teal-text { color: #009688 !important; }
     </style>
 </head>
 <body>
     <header>
         <ul id="nav-mobile" class="side-nav fixed">
             <li class="logo">
-                <img src="" class="circle responsive-img">
-                <h5 class="white-text" style="font-weight: 600; margin-top: 10px; font-size: 1.2rem;">Kinar Ghanshyambhai Dhameliya</h5>
-                <p class="grey-text text-lighten-3" style="font-size: 0.85rem;">Public Health Professional</p>
+                <h5 class="black-text" style="font-weight: 600; letter-spacing: 1px; line-height: 1.2;">
+                    Kinar Ghanshyambhai Dhameliya
+                </h5>
+                <p class="teal-text" style="font-size: 0.9rem; margin: 0;">Public Health Professional</p>
             </li>
-            <li><a href="#intro" class="waves-effect"><i class="fa fa-home teal-text"></i>Home</a></li>
-            <li><a href="#about" class="waves-effect"><i class="fa fa-user teal-text"></i>About</a></li>
-            <li><a href="#experience" class="waves-effect"><i class="fa fa-briefcase teal-text"></i>Experience</a></li>
-            <li><a href="#projects" class="waves-effect"><i class="fa fa-code teal-text"></i>Projects</a></li>
-            <li><a href="#skills" class="waves-effect"><i class="fa fa-wrench teal-text"></i>Skills</a></li>
-            <li><a href="#education" class="waves-effect"><i class="fa fa-graduation-cap teal-text"></i>Education</a></li>
-            <li><a href="#contact" class="waves-effect"><i class="fa fa-envelope teal-text"></i>Contact</a></li>
+            <li class="bold"><a href="#intro" class="waves-effect"><i class="fa fa-home teal-text"></i>Home</a></li>
+            <li class="bold"><a href="#about" class="waves-effect"><i class="fa fa-user teal-text"></i>About</a></li>
+            <li class="bold"><a href="#experience" class="waves-effect"><i class="fa fa-briefcase teal-text"></i>Experience</a></li>
+            <li class="bold"><a href="#projects" class="waves-effect"><i class="fa fa-code teal-text"></i>Projects</a></li>
+            <li class="bold"><a href="#skills" class="waves-effect"><i class="fa fa-wrench teal-text"></i>Skills</a></li>
+            <li class="bold"><a href="#education" class="waves-effect"><i class="fa fa-graduation-cap teal-text"></i>Education</a></li>
+            <li class="bold"><a href="#contact" class="waves-effect"><i class="fa fa-envelope teal-text"></i>Contact</a></li>
         </ul>
     </header>
 
     <main>
         <section id="intro" class="section scrollspy">
             <div class="container">
-                <span class="teal-text" style="font-weight: 600; letter-spacing: 3px; text-transform: uppercase;">Hello, I am</span>
-                <h1 style="font-weight: 700; font-size: 3.8rem; margin: 10px 0;">Kinar Ghanshyambhai Dhameliya</h1>
-                <h4 style="font-weight: 300;">Professional <span class="typing"></span></h4>
-                <p style="font-size: 1.15rem; color: #cfd8dc; max-width: 650px; line-height: 1.8;">Public Health Professional with a strong background in epidemiology, research, and healthcare.</p>
-                <div style="margin-top: 40px;"><a href="www.linkedin.com/in/kinar-dhameliya-721219333" target="_blank" class="btn-floating btn-large waves-effect waves-light teal" style="margin-right:15px;"><i class="fa fa-linkedin"></i></a><a href="dhameliyakinar@outlook.com" target="_blank" class="btn-floating btn-large waves-effect waves-light teal" style="margin-right:15px;"><i class="fa fa-link"></i></a></div>
+                <h1 style="font-weight: 800; font-size: 3.5rem;">Kinar Ghanshyambhai Dhameliya</h1>
+                <h4>I am a <span class="typing"></span></h4>
+                <p style="font-size: 1.2rem; color: #b0bec5; max-width: 600px; line-height: 1.6;">Public Health Professional with experience in epidemiology, research, and healthcare</p>
+                <div style="margin-top: 30px;"><a href="www.linkedin.com/in/kinar-dhameliya-721219333" target="_blank" class="btn-floating btn-large waves-effect waves-light teal" style="margin-right:15px;"><i class="fa fa-linkedin"></i></a></div>
             </div>
         </section>
 
         <section id="about" class="container section scrollspy">
-            <h3 class="page-title">Profile</h3>
+            <h3 class="page-title">About</h3>
             <div class="card">
                 <div class="card-content">
-                    <p class="flow-text" style="font-size: 1.1rem;">Public Health Professional with experience in epidemiology, research, and healthcare. Skilled in data analysis, statistical software, and clinical skills.</p>
-                    <div style="margin-top: 20px;"><ul><li><i class='fa fa-check teal-text'></i> Epidemiology</li><li><i class='fa fa-check teal-text'></i> Public Health</li><li><i class='fa fa-check teal-text'></i> Research</li><li><i class='fa fa-check teal-text'></i> Healthcare</li><li><i class='fa fa-check teal-text'></i> Data Analysis</li></ul></div>
+                    <div class="flow-text">Public Health Professional with experience in epidemiology, research, and healthcare</div>
+                    <ul><li><i class='fa fa-check teal-text'></i> Master of Public Health in Epidemiology</li><li><i class='fa fa-check teal-text'></i> Experience in research, healthcare, and public health</li><li><i class='fa fa-check teal-text'></i> Skilled in data analysis, statistical software, and clinical skills</li></ul>
                 </div>
             </div>
         </section>
@@ -166,7 +152,7 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Graduate Research Intern @ University of Cincinnati College of Medicine</span>
                 <p><em>Aug 2025 – Dec 2025</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished a 95% reduction in data errors as measured by quality checks, by conducting data analysis and cleaning 8000+ participant records. Accomplished the development of data visualizations to estimate hazard ratios as measured by Cox regression analysis, by analyzing data in SAS. Accomplished the preparation of reports and presentations as measured by stakeholder feedback, by maintaining proper source documentation and adhering to ethical practices.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished a 95% reduction in data errors as measured by quality checks, by conducting data analysis and cleaning 8000+ participant records to ensure data accuracy and completeness.</p>
             </div>
         </div>
         
@@ -174,7 +160,7 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Public Health Intern @ City of Springdale Health Department</span>
                 <p><em>Jan 2025 – Apr 2025</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished greater than 98% data accuracy as measured by data quality checks, by maintaining organized data records and documentation for more than 1000 records. Accomplished the identification of public health disparities as measured by statistical analyses, by conducting comparative quantitative data analyses of local cardiovascular mortality data. Accomplished the development of Health in All Policies (HiAP) recommendations as measured by stakeholder feedback, by collaborating with community partners and stakeholders.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished greater than 98% data accuracy as measured by data records, by maintaining organized data records and documentation for more than 1000 records.</p>
             </div>
         </div>
         
@@ -182,7 +168,7 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Medical Officer & Observer, Emergency Department @ BAPS Pramukh Swami Hospital</span>
                 <p><em>May 2023 - Dec 2023</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished clear communication and adaptability skills as measured by patient feedback, by managing trauma cases and acute medical conditions in a high-pressure emergency department. Accomplished accurate data collection and record keeping as measured by data quality checks, by supporting in data collection and record keeping for clinical cases.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished clear communication, adaptability, and time management skills as measured by positive feedback, by managing trauma cases and acute medical conditions in a high-pressure emergency department.</p>
             </div>
         </div>
         
@@ -190,7 +176,7 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Resident Intern @ Dhiraj General Hospital</span>
                 <p><em>Apr 2021 - Apr 2022</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished accurate data entry and source documentation as measured by data quality checks, by conducting community surveys and maintaining accurate data entry and source documentation. Accomplished exposure to diverse specialties as measured by physician feedback, by participating in medical rounds, case presentations, and treatment planning under physician supervision.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished exposure to diverse specialties as measured by participation in medical rounds, case presentations, and treatment planning, by supporting patient recruitment, enrollment, scheduling, and consent during clinical rotations.</p>
             </div>
         </div>
         
@@ -199,11 +185,12 @@
         <section id="projects" class="container section scrollspy">
             <h3 class="page-title">Projects</h3>
             <div class="row">
+                
         <div class="col s12 m6">
             <div class="card hoverable">
                 <div class="card-content" style="min-height:220px;">
                     <span class="card-title teal-text" style="font-weight:500;">EVIGENCHIP Research Project</span>
-                    <p>A cross-sectional study of prevalence and predisposing factors for lower back pain in various age groups.</p>
+                    <p>A cross-sectional study of prevalence and predisposing factors for lower back pain in various age groups</p>
                     <div style="margin-top:15px;">
                         <span class="skill-tag">Data collection</span> <span class="skill-tag">Data analysis</span> <span class="skill-tag">Statistical software</span>
                     </div>
@@ -213,7 +200,17 @@
                 </div>
             </div>
         </div>
-        </div>
+        
+            </div>
+        </section>
+
+        <section id="skills" class="container section scrollspy">
+            <h3 class="page-title">Skills</h3>
+            <div class="card">
+                <div class="card-content">
+                    {{SKILL_SECTIONS}}
+                </div>
+            </div>
         </section>
 
         <section id="education" class="container section scrollspy">
@@ -246,12 +243,20 @@
         <section id="contact" class="container section scrollspy">
             <h3 class="page-title">Contact</h3>
             <div class="card">
-                <div class="card-content center">
-                    <h5>Let's work together!</h5>
-                    <p style="margin-bottom: 30px;">I'm currently looking for new opportunities.</p>
-                    <a href="mailto:dhameliyakinar@outlook.com" class="btn-large teal waves-effect waves-light">
-                        <i class="fa fa-paper-plane left"></i> Send Email
-                    </a>
+                <div class="card-content">
+                    <div class="row">
+                        <div class="col s12 m6">
+                            <p style="font-size: 1.1rem;">I'm always open to discussing new projects, creative ideas or opportunities to be part of your visions.</p>
+                            <div style="margin-top: 20px;">
+                                {{CONTACT_ITEMS}}
+                            </div>
+                        </div>
+                        <div class="col s12 m6 center-align" style="padding-top: 20px;">
+                            <a href="mailto:dhameliyakinar@outlook.com" class="btn-large waves-effect waves-light teal">
+                                <i class="fa fa-paper-plane left"></i>Email Me
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -263,10 +268,15 @@
     <script>
         $(document).ready(function(){
             $('.scrollspy').scrollSpy();
+            
+            // Mobile Side-Nav Initialization
+            $(".button-collapse").sideNav();
+
+            // Typed.js Animation
             new Typed('.typing', {
-                strings: ["Epidemiology", "Public Health", "Research", "Healthcare", "Data Analysis"],
-                typeSpeed: 60,
-                backSpeed: 40,
+                strings: ["Epidemiology", "Public Health", "Research", "Healthcare"],
+                typeSpeed: 60, 
+                backSpeed: 40, 
                 loop: true
             });
         });
