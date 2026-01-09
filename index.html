@@ -11,156 +11,121 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     
     <style>
-        :root {
-            --primary-color: #00b894;
-            --secondary-color: #00cec9;
-            --dark-bg: #1e272e;
-            --text-main: #2d3436;
-            --glass-bg: rgba(255, 255, 255, 0.95);
-        }
-
+        /* Global Styles */
         body { 
-            background-color: #f0f3f5; 
-            color: var(--text-main); 
+            background-color: #fbfbfb; 
+            color: #2d3436; 
             font-family: 'Poppins', sans-serif; 
-            overflow-x: hidden;
         }
 
-        /* --- Floating Sidebar (Glass Design) --- */
-        header, main, footer { padding-left: 320px; }
-        @media only screen and (max-width : 992px) { 
-            header, main, footer { padding-left: 0; } 
-        }
+        /* Sidebar: Professional Dark Theme */
+        header, main, footer { padding-left: 300px; }
+        @media only screen and (max-width : 992px) { header, main, footer { padding-left: 0; } }
         
         nav.side-nav.fixed { 
             width: 300px; 
-            background: var(--dark-bg);
+            background-color: #1e272e; 
             border: none;
-            box-shadow: 15px 0 35px rgba(0,0,0,0.1);
-            padding-top: 0;
+            box-shadow: 5px 0 15px rgba(0,0,0,0.1);
         }
         
         .side-nav .logo { 
             padding: 60px 20px; 
             text-align: center; 
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%);
             margin-bottom: 20px;
-            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
         }
 
-        /* Navigation Spacing Fix */
-        .side-nav li { line-height: 60px; }
+        /* Navigation Spacing - Fixed and Even */
+        .side-nav li { 
+            line-height: 60px; 
+        }
+
         .side-nav li a {
-            color: #b2bec3 !important;
-            font-size: 1rem !important;
-            font-weight: 500 !important;
-            padding: 0 40px !important;
+            color: #d1d8e0 !important;
+            font-size: 1.05rem !important;
+            font-weight: 400 !important;
+            padding: 0 35px !important;
             display: flex;
             align-items: center;
-            transition: 0.4s ease;
+            height: 60px;
+            transition: all 0.3s ease;
         }
 
         .side-nav li a i {
             margin-right: 20px !important;
-            color: var(--secondary-color);
             font-size: 1.3rem !important;
+            color: #00cec9; 
+            width: 25px;
+            text-align: center;
         }
 
         .side-nav li a:hover {
+            background-color: rgba(0, 206, 201, 0.1) !important;
             color: #fff !important;
-            background: rgba(255, 255, 255, 0.05) !important;
-            padding-left: 50px !important;
+            padding-left: 45px !important;
         }
 
-        /* --- Creative Hero Section --- */
+        /* Hero Section with Creative Slant */
         #intro { 
-            background: var(--dark-bg);
-            /* Mesh Gradient Effect */
-            background-image: 
-                radial-gradient(at 0% 0%, rgba(0, 184, 148, 0.2) 0, transparent 50%), 
-                radial-gradient(at 100% 100%, rgba(0, 206, 201, 0.2) 0, transparent 50%);
+            background: #2d3436;
+            background: linear-gradient(135deg, rgba(45, 52, 54, 0.9), rgba(45, 52, 54, 0.8)),
+                        url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1600&q=80');
+            background-size: cover;
+            background-position: center;
             color: white; 
             min-height: 100vh; 
             display: flex; 
             align-items: center; 
-            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 92%, 0 100%);
         }
 
-        .hero-content h1 {
-            font-weight: 800;
-            font-size: 4.5rem;
-            margin: 0;
-            letter-spacing: -2px;
-        }
-
-        .typing { color: var(--secondary-color); text-decoration: underline; }
-
-        /* --- Content Cards (Glassmorphism) --- */
-        section { padding: 100px 0; }
+        /* Content Styling */
+        section { padding: 80px 0; }
         
         .page-title { 
+            color: #2d3436; 
             font-weight: 800; 
             text-transform: uppercase; 
-            letter-spacing: 5px; 
-            color: var(--dark-bg);
-            margin-bottom: 60px;
-            position: relative;
-        }
-
-        .page-title::before {
-            content: '';
-            position: absolute;
-            bottom: -10px;
-            width: 80px;
-            height: 6px;
-            background: var(--primary-color);
-            border-radius: 10px;
-        }
-
-        .custom-card {
-            background: var(--glass-bg);
-            border-radius: 24px;
-            padding: 40px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.03);
-            border: 1px solid rgba(255,255,255,0.8);
-            transition: 0.4s ease;
-        }
-
-        .custom-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 30px 60px rgba(0,0,0,0.08);
-        }
-
-        /* --- Skills & Chips --- */
-        .skill-chip {
+            letter-spacing: 5px;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
             display: inline-block;
-            padding: 10px 20px;
-            margin: 8px;
-            background: #fff;
-            color: var(--primary-color);
+            border-bottom: 5px solid #00cec9;
+        }
+
+        .typing { color: #00cec9; font-weight: 700; }
+
+        /* Card Design */
+        .card {
             border-radius: 15px;
-            font-weight: 600;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-            border: 1px solid #e0e6ed;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05) !important;
+            transition: transform 0.3s ease;
+            border: 1px solid rgba(0,0,0,0.03);
         }
 
-        /* --- Buttons --- */
-        .btn-creative {
-            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-            padding: 15px 40px;
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1) !important;
+        }
+
+        .skill-tag { 
+            display: inline-block; 
+            padding: 7px 16px; 
+            margin: 5px; 
+            background: #e0fcfb; 
+            color: #00b894; 
+            border-radius: 50px; 
+            font-weight: 600; 
+            font-size: 0.85rem;
+        }
+
+        .btn-large.teal {
+            background: linear-gradient(135deg, #00b894 0%, #00cec9 100%) !important;
             border-radius: 50px;
-            color: white;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 10px 20px rgba(0, 206, 201, 0.2);
-            transition: 0.3s;
-        }
-
-        .btn-creative:hover {
-            transform: scale(1.05);
-            box-shadow: 0 15px 30px rgba(0, 206, 201, 0.4);
-            color: white;
+            text-transform: none;
+            font-weight: 600;
+            box-shadow: 0 8px 15px rgba(0, 206, 201, 0.2);
         }
     </style>
 </head>
@@ -168,51 +133,47 @@
     <header>
         <ul id="nav-mobile" class="side-nav fixed">
             <li class="logo">
-                <h4 class="white-text" style="font-weight: 800; margin: 0;">Kinar Ghanshyambhai Dhameliya</h4>
-                <p class="teal-text text-lighten-4" style="margin:0; font-size: 0.8rem; letter-spacing: 1px;">Public Health Professional</p>
+                <h5 class="white-text" style="font-weight: 800; letter-spacing: 1px;">Kinar Ghanshyambhai Dhameliya</h5>
+                <p style="color: #e1f5fe; font-weight: 300; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px; margin: 0;">Public Health Professional</p>
             </li>
-            <li><a href="#intro" class="waves-effect"><i class="fa fa-home"></i>Introduction</a></li>
-            <li><a href="#about" class="waves-effect"><i class="fa fa-user"></i>About Me</a></li>
-            <li><a href="#experience" class="waves-effect"><i class="fa fa-briefcase"></i>Work History</a></li>
-            <li><a href="#projects" class="waves-effect"><i class="fa fa-code"></i>Portfolio</a></li>
-            <li><a href="#skills" class="waves-effect"><i class="fa fa-wrench"></i>Tech Stack</a></li>
+            <li><a href="#intro" class="waves-effect"><i class="fa fa-home"></i>Home</a></li>
+            <li><a href="#about" class="waves-effect"><i class="fa fa-user"></i>About</a></li>
+            <li><a href="#experience" class="waves-effect"><i class="fa fa-briefcase"></i>Experience</a></li>
+            <li><a href="#projects" class="waves-effect"><i class="fa fa-code"></i>Projects</a></li>
+            <li><a href="#skills" class="waves-effect"><i class="fa fa-wrench"></i>Skills</a></li>
             <li><a href="#education" class="waves-effect"><i class="fa fa-graduation-cap"></i>Education</a></li>
-            <li><a href="#contact" class="waves-effect"><i class="fa fa-envelope"></i>Let's Talk</a></li>
+            <li><a href="#contact" class="waves-effect"><i class="fa fa-envelope"></i>Contact</a></li>
         </ul>
     </header>
 
     <main>
         <section id="intro">
-            <div class="container hero-content">
-                <span style="color: var(--secondary-color); font-weight: 600; letter-spacing: 3px;">STRATEGIC INNOVATOR</span>
-                <h1>I'm Kinar Ghanshyambhai Dhameliya</h1>
-                <h2 style="font-weight: 300; margin-top: 10px;">Expert in <span class="typing"></span></h2>
-                <p style="font-size: 1.2rem; color: #b2bec3; max-width: 650px; line-height: 1.8; margin: 30px 0;">
-                    Public Health Professional with experience in epidemiology, research, and healthcare
-                </p>
-                <div style="display: flex; gap: 20px;">
-                    <a href="#contact" class="btn-creative">Get in Touch</a>
-                    <a href="www.linkedin.com/in/kinar-dhameliya-721219333" target="_blank" class="btn-floating btn-large waves-effect waves-light teal" style="margin-right:15px;"><i class="fa fa-linkedin"></i></a>
+            <div class="container">
+                <h6 style="color: #00cec9; letter-spacing: 4px; font-weight: 600; text-transform: uppercase;">Professional Portfolio</h6>
+                <h1 style="font-weight: 800; font-size: 4rem; margin: 10px 0; color: white;">I am a <span class="typing"></span></h1>
+                <p style="font-size: 1.2rem; color: #cfd8dc; max-width: 600px; line-height: 1.8;">Public Health Professional with experience in epidemiology, research, and healthcare</p>
+                <div style="margin-top: 40px;"><a href="www.linkedin.com/in/kinar-dhameliya-721219333" target="_blank" class="btn-floating btn-large waves-effect waves-light teal" style="margin-right:15px;"><i class="fa fa-linkedin"></i></a></div>
+            </div>
+        </section>
+
+        <section id="about" class="container section scrollspy">
+            <h3 class="page-title">Profile</h3>
+            <div class="card">
+                <div class="card-content" style="padding: 40px;">
+                    <p class="flow-text">Public Health Professional with experience in epidemiology, research, and healthcare</p>
+                    <div style="margin-top: 25px;"><ul><li><i class='fa fa-check teal-text'></i> Master of Public Health in Epidemiology</li><li><i class='fa fa-check teal-text'></i> Experience in research, healthcare, and public health</li><li><i class='fa fa-check teal-text'></i> Skilled in data analysis, statistical software, and clinical skills</li></ul></div>
                 </div>
             </div>
         </section>
 
-        <section id="about" class="container">
-            <h3 class="page-title">Profile</h3>
-            <div class="custom-card">
-                <p class="flow-text" style="color: #636e72;">Public Health Professional with experience in epidemiology, research, and healthcare</p>
-                <div style="margin-top: 30px;"><ul><li><i class='fa fa-check teal-text'></i> Master of Public Health in Epidemiology</li><li><i class='fa fa-check teal-text'></i> Experience in research, healthcare, and public health</li><li><i class='fa fa-check teal-text'></i> Skilled in data analysis, statistical software, and programming languages</li></ul></div>
-            </div>
-        </section>
-
-        <section id="experience" class="container">
+        <section id="experience" class="container section scrollspy">
             <h3 class="page-title">Experience</h3>
             
         <div class="card">
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Graduate Research Intern @ University of Cincinnati College of Medicine</span>
                 <p><em>Aug 2025 – Dec 2025</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished data analysis of prospective longitudinal cohort data as measured by reduced data errors by 95%, by conducting data cleaning, management, and quality checks using SAS and maintaining compliance with IRB and institutional data protection policies.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished data analysis of prospective longitudinal cohort data as measured by reduced data errors by 95%, by conducting data cleaning, management, and quality checks, and performing statistical analysis using SAS.</p>
             </div>
         </div>
         
@@ -228,7 +189,7 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Medical Officer & Observer, Emergency Department @ BAPS Pramukh Swami Hospital</span>
                 <p><em>May 2023 - Dec 2023</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished management of trauma cases and acute medical conditions as measured by positive feedback for accuracy, by showcasing clear communication, adaptability, and time management skills, and supporting data collection and record keeping for clinical cases.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished management of trauma cases and acute medical conditions as measured by positive feedback for accuracy, by showcasing clear communication, adaptability, and time management skills, and supporting data collection and record keeping.</p>
             </div>
         </div>
         
@@ -236,14 +197,14 @@
             <div class="card-content">
                 <span class="card-title teal-text" style="font-weight:400;">Resident Intern @ Dhiraj General Hospital</span>
                 <p><em>Apr 2021 - Apr 2022</em></p>
-                <p style="margin-top:10px; font-size:1.05rem;">Accomplished community surveys and data management as measured by accurate data entry and source documentation, by conducting community surveys, compiling and managing data, and supporting patient recruitment and enrollment.</p>
+                <p style="margin-top:10px; font-size:1.05rem;">Accomplished community surveys and data collection as measured by accurate data entry and source documentation, by conducting community surveys, compiling and managing data, and supporting patient recruitment and enrollment.</p>
             </div>
         </div>
         
         </section>
 
-        <section id="projects" class="container">
-            <h3 class="page-title">Featured Projects</h3>
+        <section id="projects" class="container section scrollspy">
+            <h3 class="page-title">Projects</h3>
             <div class="row">
         <div class="col s12 m6">
             <div class="card hoverable">
@@ -251,7 +212,7 @@
                     <span class="card-title teal-text" style="font-weight:500;">EVIGENCHIP Research Project</span>
                     <p>A cross-sectional study of prevalence and predisposing factors for lower back pain in various age groups</p>
                     <div style="margin-top:15px;">
-                        <span class="skill-tag">Data collection</span> <span class="skill-tag">Data analysis</span> <span class="skill-tag">Evidence-based interventions</span>
+                        <span class="skill-tag">Data collection</span> <span class="skill-tag">Data analysis</span> <span class="skill-tag">Statistical software</span>
                     </div>
                 </div>
                 <div class="card-action">
@@ -262,19 +223,44 @@
         </div>
         </section>
 
-        <section id="skills" class="container">
-            <h3 class="page-title">Skills & Tools</h3>
-            <div class="custom-card">
-                {{SKILL_SECTIONS}}
-            </div>
+        <section id="skills" class="container section scrollspy">
+            <h3 class="page-title">Skills</h3>
+            <div class="card"><div class="card-content">{{SKILL_SECTIONS}}</div></div>
         </section>
 
-        <section id="contact" class="container center">
-            <h3 class="page-title center">Contact</h3>
-            <div class="custom-card" style="padding: 80px 20px;">
-                <h4 style="font-weight: 700;">Have a project in mind?</h4>
-                <p style="margin-bottom: 40px; color: #636e72;">I am currently available for new opportunities and collaborations.</p>
-                <a href="mailto:dhameliyakinar@outlook.com" class="btn-creative">Send me a message</a>
+        <section id="education" class="container section scrollspy">
+            <h3 class="page-title">Education</h3>
+            
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title teal-text" style="font-weight:400;">Master of Public Health in Epidemiology</span>
+                <p>University of Cincinnati | Jan 2024 - Dec 2025</p>
+                <p class="teal-text"><b>CGPA: 3.98</b></p>
+                <div style="margin-top:10px;">
+                    <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Intro to Epidemiology</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Infectious Disease Epidemiology</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Project Management</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Human Subject Research Compliance</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Study Design</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Clinical Research</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-content">
+                <span class="card-title teal-text" style="font-weight:400;">Bachelor of Medicine and Bachelor of Surgery</span>
+                <p>S.B.K.S. Medical Institute and Research Centre, Sumandeep Vidyapeeth University | Oct 2016 - Apr 2022</p>
+                <p class="teal-text"><b>CGPA: 4.0</b></p>
+                <div style="margin-top:10px;">
+                    <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Preventive and Social Medicine</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Evidence Based Research</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Microbiology</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Pathology</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Physiology</span> <span class="skill-tag" style="background:#f5f5f5; color:#757575;">Medicine</span>
+                </div>
+            </div>
+        </div>
+        
+        </section>
+
+        <section id="contact" class="container center section scrollspy">
+            <h3 class="page-title">Contact</h3>
+            <div class="card" style="padding: 50px 20px;">
+                <h4 style="font-weight: 700;">Let's Work Together</h4>
+                <p style="color: #636e72; margin-bottom: 30px;">Currently available for new opportunities and interesting projects.</p>
+                <a href="mailto:dhameliyakinar@outlook.com" class="btn-large waves-effect waves-light teal">Get In Touch</a>
             </div>
         </section>
     </main>
@@ -287,7 +273,7 @@
             $('.scrollspy').scrollSpy();
             new Typed('.typing', {
                 strings: ["Epidemiology", "Public Health", "Research", "Healthcare"],
-                typeSpeed: 50, backSpeed: 30, loop: true
+                typeSpeed: 60, backSpeed: 40, loop: true
             });
         });
     </script>
